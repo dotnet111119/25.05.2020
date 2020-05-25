@@ -18,6 +18,8 @@
             return dt;
         }
         
+        ///  Demo url: http://localhost:[Port]/api/purchase/getfromdate?startDate=20191126T140931Z
+        ///  moving +2 hours forward due to time zone
         [HttpGet]
         [Route("api/purchase/getfromdate")]
         public IHttpActionResult StartFromDate([FromUri]string startDate)
